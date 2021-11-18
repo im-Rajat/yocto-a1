@@ -1,7 +1,9 @@
 CC = g++
 CFLAGS = -Wall -g
 
-main: main.o Animal.o
+all: animal main.o Animal.o
+
+animal: main.o Animal.o
 	$(CC) -o animal main.o Animal.o
 
 main.o: main.cpp Animal.cpp Animal.h
@@ -14,5 +16,5 @@ Animal.o: Animal.cpp Animal.h
 clean:
 	rm -rf *.o
 
-run:
+install:
 	./animal
