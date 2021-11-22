@@ -7,7 +7,7 @@ LDFLAGS =
 DESTDIR =
 BINDIR = /usr/bin
 
-SOURCES = main.cpp animal.cpp
+SOURCES = main.cpp Animal.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 EXECUTABLE = animal
