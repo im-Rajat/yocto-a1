@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14  -rdynamic CMakeFiles/animal.dir/main.cpp.o CMakeFiles/animal.dir/Animal.cpp.o  -o animal 

@@ -1,0 +1,7 @@
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/install/strip.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/edit_cache.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/install.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/rebuild_cache.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/list_install_components.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/animal.dir
+/mnt/d/Downloads/Nagarro/Yocto/Animal/CMakeFiles/install/local.dir
