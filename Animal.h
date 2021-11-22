@@ -11,7 +11,6 @@ class Animal
         string species;
         
     public:
-        Animal();
         Animal(const string& = "NULL");
         string getSpecies();
 };
