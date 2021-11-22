@@ -1,20 +1,27 @@
 CC = g++
+RM = rm
+
 CFLAGS = -Wall -g
+LDFLAGS =
 
-all: animal main.o Animal.o
+DESTDIR =
+BINDIR = /usr/bin
 
-animal: main.o Animal.o
-	$(CC) -o animal main.o Animal.o
+SOURCES = main.cpp animal.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
 
-main.o: main.cpp Animal.cpp Animal.h
-	$(CC) -c main.cpp Animal.cpp
+EXECUTABLE = animal
 
-main.o: main.cpp Animal.h
+.cpp.o: $(CC) $(CFLAGS) $< -o $@
 
-Animal.o: Animal.cpp Animal.h
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(LDFLAGS) $^ -o $@
 
 clean:
-	rm -rf *.o
+	$(RM) $(EXECUTABLE) *.o
 
-install:
-	./animal
+install: $(EXECUTABLE)
+	mkdir -p $(DESTDIR)/$(BINDIR)
+	install -m 0755 $< $(DESTDIR)/$(BINDIR)
