@@ -1,5 +1,5 @@
 CC = g++
-RM = rm
+RM = rm -rf
 
 CFLAGS = -Wall -g
 LDFLAGS =
